@@ -8,7 +8,7 @@
 
 ### Register Mongo Database
 
-1. Register, create a free "cluster" and then a database on [Mongo's website](www.mongodb.com)
+1. Register, create a free "cluster" and then a database on [Mongo's website](https://mongodb.com)
 2. Once it's up, copy the connection string
 
 ### Configure environment
@@ -37,7 +37,7 @@ If you want to clear the database (perhaps before seeding?):
 
 > How to check if it works?
 
-You can use something like [postman](www.postman.com), to send http requests.
+You can use something like [postman](https://postman.com), to send http requests.
 
 Else if you use VSCode, the [REST Client plugin](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) can be handy (see the `request.rest` file).
 
