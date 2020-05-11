@@ -6,7 +6,8 @@ router.use('/users', users)
 router.use('/cars', cars)
 
 router.get('/', (req, res) => {
-  res.send('We are on home')
+  const endpoints = { user_url: '/users/{user}', car_url: '/cars/{car}' }
+  res.json(endpoints)
 })
 
 module.exports = router

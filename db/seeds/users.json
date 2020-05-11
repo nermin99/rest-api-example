@@ -33,14 +33,14 @@
       "password": "12345"
     },
     "createdAt": "2020-05-11T13:00:03.087Z"
-	},
-	{
+  },
+  {
     "name": "Daniela Rodriguez",
     "login": {
       "username": "whiteleopard223",
       "password": "password"
-		},
-		"age": 70,
+    },
+    "age": 70,
     "createdAt": "2020-05-11T13:00:04.087Z"
   }
 ]
