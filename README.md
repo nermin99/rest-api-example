@@ -37,7 +37,7 @@ If you want to clear the database (perhaps before seeding?):
 
 > How to check if it works?
 
-You can use something like [postman](https://postman.com), to send http requests.
+You can use something like [Postman](https://postman.com), to send http requests.
 
 Else if you use VSCode, the [REST Client plugin](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) can be handy (see the `request.rest` file).
 
