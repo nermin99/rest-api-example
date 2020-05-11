@@ -32,3 +32,17 @@ There is also option to load a sample dataset (aka seed) into the databse before
 If you want to clear the database (perhaps before seeding?):
 
     npm run db:purge
+
+## Testing
+
+> How to check if it works?
+
+You can use something like [postman](www.postman.com), to send http requests.
+
+Else if you use VSCode, the [REST Client plugin](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) can be handy (see the `request.rest` file).
+
+You can issue a `GET` request to the root endpoint to get all the endpoint categories that the REST API supports:
+
+    http://localhost:3000
+
+The `request.rest` file also contains some examples of requests you can make.
