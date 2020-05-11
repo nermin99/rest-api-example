@@ -19,7 +19,7 @@
 
 To start the backend:
 
-	npm run start
+    npm start
 
 To start the backend and listen for changes (recommended):
 
@@ -27,8 +27,8 @@ To start the backend and listen for changes (recommended):
 
 There is also option to load a sample dataset (aka seed) into the databse beforehand:
 
-	npm run db:seed
+    npm run db:seed
 
 If you want to clear the database (perhaps before seeding?):
 
-	npm run db:purge
+    npm run db:purge
