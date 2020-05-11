@@ -5,8 +5,14 @@ const CarSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  color: String,
-  hp: Number
+  miles_per_Gallon: Number,
+  cylinders: Number,
+  displacement: Number,
+  horsepower: Number,
+  weight_in_lbs: Number,
+  acceleration: Number,
+  year: String,
+  origin: String
 })
 
 const Car = mongoose.model('Car', CarSchema)

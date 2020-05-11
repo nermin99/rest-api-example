@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "start:watch": "nodemon app.js",
+    "db:seed": "node -e \"require('./db/seeds').seed()\"",
+    "db:purge": "node -e \"require('./db/seeds').purge()\""
   },
   "keywords": [],
   "author": "",

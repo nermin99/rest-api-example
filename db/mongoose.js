@@ -7,6 +7,4 @@ const options = {
   useUnifiedTopology: true
 }
 
-mongoose.connect(process.env.DB_CONNECTION, options, () =>
-  console.log('Connected to DB!')
-)
+mongoose.connect(process.env.DB_CONNECTION, options)

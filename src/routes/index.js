@@ -1,8 +1,9 @@
 const router = require('express').Router()
 
-const { posts } = require('./v1')
+const { users, cars } = require('./v1')
 
-router.use('/posts', posts)
+router.use('/users', users)
+router.use('/cars', cars)
 
 router.get('/', (req, res) => {
   res.send('We are on home')
