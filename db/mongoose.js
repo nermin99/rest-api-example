@@ -4,8 +4,8 @@ const { db } = require('exp-config');
 const connectStr = db.connectStr
   ? db.connectStr
   : db.IS_SRV == true
-  ? `mongodb+srv://${db.user}:${db.password}@${db.host}/${db.name}`
-  : `mongodb://${db.host}/${db.name}`;
+  ? `mongodb+srv://${db.user}:${db.password}@${db.host}/${db.name}${db.query}`
+  : `mongodb://${db.host}/${db.name}${db.query}`;
 
 const options = {
   useNewUrlParser: true,
