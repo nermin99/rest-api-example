@@ -1,7 +1,7 @@
 {
   "name": "rest-api-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "A template/example for a rest-api",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -10,7 +10,7 @@
     "db:purge": "node -e \"require('./db/seeds').purge()\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Nermin Skenderovic",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

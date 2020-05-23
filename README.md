@@ -8,7 +8,7 @@
 
 ### Register Mongo Database
 
-1. Register, create a free "cluster" and then a database on [Mongo's website](https://mongodb.com)
+1. Register, create a free project, cluster and then a database on [Mongo's website](https://mongodb.com)
 2. Once it's up, copy the connection string
 
 ### Configure environment
