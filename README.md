@@ -42,6 +42,16 @@ If you want to clear the database (perhaps before seeding?):
 
     npm run db:purge
 
+## Stop
+
+To stop the docker containers:
+
+    docker-compose down
+
+To stop the docker containers and remove the data(i.e. the saved database):
+
+    docker-compose down -v
+
 ## Testing
 
 > How to check if it works?

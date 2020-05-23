@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-const { DB } = require('exp-config');
+const { db } = require('exp-config');
 
-const connectStr = DB.CONNECTSTR
-  ? DB.CONNECTSTR
-  : DB.IS_SRV == true
-  ? `mongodb+srv://${DB.USER}:${DB.PASSWORD}@${DB.HOST}/${DB.NAME}`
-  : `mongodb://${DB.HOST}/${DB.NAME}`;
+const connectStr = db.connectStr
+  ? db.connectStr
+  : db.IS_SRV == true
+  ? `mongodb+srv://${db.user}:${db.password}@${db.host}/${db.name}`
+  : `mongodb://${db.host}/${db.name}`;
 
 const options = {
   useNewUrlParser: true,
