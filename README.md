@@ -1,21 +1,30 @@
 # REST API Example
 
-**With Node.js, Express & MongoDB**
+**With Node.js + Express, MongoDB & Docker**
 
 ## Setup
 
+### Prerequisites
+
+Install [Node](https://nodejs.org) and [Docker](https://docker.com) on your machine.
+
+### Installation
+
+Copy the environment:
+
+    cp .env.example .env
+
+Install the dependencies:
+
     npm install
 
-### Register Mongo Database
+## Quickstart
 
-1. Register, create a free project, cluster and then a database on [Mongo's website](https://mongodb.com)
-2. Once it's up, copy the connection string
+    docker-compose up -d mongo
+    npm run db:seed
+    npm run start:watch
 
-### Configure environment
-
-    cp .env.example .env # And paste the connection string
-
-## Starting
+## Start
 
 To start the backend:
 
@@ -46,3 +55,11 @@ You can issue a `GET` request to the root endpoint to get all the endpoint categ
     http://localhost:3000
 
 The `request.rest` file also contains some examples of requests you can make.
+
+## Optional: Register Mongo Database
+
+If you want, you can use an online database instead of the local one.
+
+1. Register, create a free project, cluster and then a database on [Mongo's website](https://mongodb.com).
+2. Once it's up, copy the connection string.
+3. Paste the connection string in the .env file and uncomment the line.

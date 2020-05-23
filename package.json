@@ -1,7 +1,9 @@
 {
   "name": "rest-api-example",
-  "version": "1.0.0",
   "description": "A template/example for a rest-api",
+  "author": "Nermin Skenderovic",
+  "version": "1.0.0",
+  "license": "ISC",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,17 +11,19 @@
     "db:seed": "node -e \"require('./db/seeds').seed()\"",
     "db:purge": "node -e \"require('./db/seeds').purge()\""
   },
-  "keywords": [],
-  "author": "Nermin Skenderovic",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
     "exp-config": "^3.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.11"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
+  },
+  "nodemonConfig": {
+    "watch": [
+      ".",
+      ".env"
+    ]
   }
 }

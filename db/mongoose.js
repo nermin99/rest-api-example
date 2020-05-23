@@ -1,27 +1,15 @@
-require('dotenv').config();
-
 const mongoose = require('mongoose');
+const { DB } = require('exp-config');
 
-const {
-  DB_CONNECTSTR,
-  DB_isSrv,
-  DB_USER,
-  DB_PASSWORD,
-  DB_HOST,
-  DB_NAME
-} = process.env;
-
-const connectStr = DB_CONNECTSTR
-  ? DB_CONNECTSTR
-  : DB_isSrv === 'true'
-  ? `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`
-  : `mongodb://${DB_HOST}/${DB_NAME}`;
+const connectStr = DB.CONNECTSTR
+  ? DB.CONNECTSTR
+  : DB.IS_SRV == true
+  ? `mongodb+srv://${DB.USER}:${DB.PASSWORD}@${DB.HOST}/${DB.NAME}`
+  : `mongodb://${DB.HOST}/${DB.NAME}`;
 
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true
 };
-
-console.log(connectStr);
 
 mongoose.connect(connectStr, options, () => console.log('Connected to DB'));
