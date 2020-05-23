@@ -1,4 +1,5 @@
-const app = require('./src')
 require('./db/mongoose')
+const { port } = require('exp-config')
+const app = require('./src')
 
-app.listen(3000, () => console.log('Server listening on port 3000'))
+app.listen(3000, () => console.log(`Server listening on port ${port}`))

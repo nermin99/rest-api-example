@@ -1,3 +1,4 @@
 {
-  "username": "myusername"
+  "env": "development",
+  "port": 3000
 }
