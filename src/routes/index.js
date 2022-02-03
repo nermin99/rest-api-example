@@ -2,10 +2,12 @@ const router = require('express').Router()
 
 const apiV1 = require('./v1')
 
-router.get('/', (req, res) => {
-  const endpoints = { user_url: '/users/{user}', car_url: '/cars/{car}' }
-  res.json(endpoints)
+const routes = apiV1.stack.map((layer) => {
+  const [method] = Object.keys(layer.route.methods)
+  return `${method.toUpperCase()} ${layer.route.path}`
 })
+
+router.get('/api/v1/', (req, res) => res.json(routes))
 
 router.use('/api/v1/', apiV1)
 
