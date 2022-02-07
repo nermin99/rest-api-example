@@ -27,10 +27,7 @@ module.exports = {
   },
   update: async (req, res, next) => {
     try {
-      const updatedUser = await User.updateOne(
-        { _id: req.params.id },
-        { $set: req.body }
-      )
+      const updatedUser = await User.updateOne({ _id: req.params.id }, { $set: req.body })
 
       res.status(200).send(updatedUser)
       next()
@@ -47,5 +44,5 @@ module.exports = {
     } catch (err) {
       next(err)
     }
-  }
+  },
 }

@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const CarSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: true,
   },
   miles_per_Gallon: Number,
   cylinders: Number,
@@ -12,7 +12,7 @@ const CarSchema = new mongoose.Schema({
   weight_in_lbs: Number,
   acceleration: Number,
   year: String,
-  origin: String
+  origin: String,
 })
 
 const Car = mongoose.model('Car', CarSchema)

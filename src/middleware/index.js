@@ -1,4 +1,4 @@
 module.exports = {
   error: require('./error'),
-  log: require('./log')
-};
+  log: require('./log'),
+}

@@ -5,5 +5,5 @@ module.exports = () => Car.insertMany(data)
 
 module.exports = {
   seed: () => Car.insertMany(data),
-  purge: () => Car.deleteMany({})
+  purge: () => Car.deleteMany({}),
 }

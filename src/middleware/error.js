@@ -1,7 +1,7 @@
 module.exports = (err, req, res, next) => {
   const output = {
     name: err.name || 'Error',
-    message: err.message
+    message: err.message,
   }
 
   console.error(err)

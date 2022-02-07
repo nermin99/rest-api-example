@@ -5,5 +5,5 @@ module.exports = () => User.insertMany(data)
 
 module.exports = {
   seed: () => User.insertMany(data),
-  purge: () => User.deleteMany({})
+  purge: () => User.deleteMany({}),
 }

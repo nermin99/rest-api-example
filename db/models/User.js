@@ -5,23 +5,23 @@ const UserSchema = new mongoose.Schema({
   login: {
     username: {
       type: String,
-      required: true
+      required: true,
     },
     password: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   admin: {
     type: Boolean,
-    default: false
+    default: false,
   },
   phone: String,
   age: Number,
   createdAt: {
     type: Date,
-    default: Date.now()
-  }
+    default: Date.now(),
+  },
 })
 
 const User = mongoose.model('User', UserSchema)
