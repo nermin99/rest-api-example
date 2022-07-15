@@ -62,7 +62,7 @@ Else if you use VSCode, the [REST Client plugin](https://marketplace.visualstudi
 
 You can issue a `GET` request to the root endpoint to get all the endpoint categories that the REST API supports:
 
-    http://localhost:3000
+    http://localhost:3000/api/v1
 
 The `request.rest` file also contains some examples of requests you can make.
 
