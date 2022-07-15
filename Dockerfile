@@ -1,9 +1,13 @@
-FROM node:12-alpine
+FROM node:16-alpine
 WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci --only=production
 
-COPY . .
+COPY config .
+COPY db .
+COPY src .
+COPY app.js .
+
 EXPOSE 3000
 CMD [ "npm", "start" ]
