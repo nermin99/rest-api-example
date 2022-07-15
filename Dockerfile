@@ -7,6 +7,7 @@ RUN npm ci --only=production
 COPY config config
 COPY db db
 COPY src src
+COPY .env .env
 COPY app.js app.js
 
 EXPOSE 3000
